@@ -1,0 +1,93 @@
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+    overflow: hidden;
+}
+
+.nav-tab{
+    background-color: #0D0D0D;
+}
+
+.logo{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: #f9f6f6;
+}
+i{
+    cursor: pointer;
+}
+
+.meal-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer{
+    top: 0;
+}
+
+.side-nav-menu{
+    z-index: 99;
+
+    left: -100%;
+    transition: left 0.5s;
+}
+
+.side-nav-menu.open {
+    left: 0;
+}
+.side-nav-menu.closed {
+    left: calc(0% - 246px);
+    transition: left 0.5s;
+}
+
+.links li {
+    transition: top 0.5s;
+    top: 220px; 
+}
+
+.links li.animated {
+    top: 0;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.alert{
+    width: fit-content;
+}
+
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+    #searchContainer{
+        padding-left: 30px;
+    }
+    #searchContainer input{
+        margin-bottom: 15px;
+    }
+    .padding-phones{
+        padding-left: 75px !important;
+    }
+
+}
+
+
+
+
+
